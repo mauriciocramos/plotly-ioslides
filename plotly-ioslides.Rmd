@@ -1,0 +1,21 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "Maurício Collaça"
+date: "January 23, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Effectiveness of Insect Sprays
+
+```{r include=FALSE}
+library(plotly)
+```
+```{r}
+plot_ly(InsectSprays, y = ~count, color = ~spray, type = "box")
+```
+
+## Thank you for reviewing
